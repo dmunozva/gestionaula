@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 		this.finish();
 	}
 	public void salirireneblanca12(View v) {
-		//modificoaaaa
+		//modificoaaaa111
 		this.finish();
 	}
 	
