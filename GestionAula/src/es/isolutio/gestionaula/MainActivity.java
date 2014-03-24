@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
 		this.finish();
 	}
 	public void salirireneblanca12(View v) {
+		//modifico
 		this.finish();
 	}
 	
