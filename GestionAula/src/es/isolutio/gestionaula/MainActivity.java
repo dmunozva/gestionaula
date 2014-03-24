@@ -31,6 +31,7 @@ public class MainActivity extends Activity {
 	public void salirireneblanca12(View v) {
 		//modificoaaaa111
 		//ultimamodif
+		//aaaaa
 		this.finish();
 	}
 	
