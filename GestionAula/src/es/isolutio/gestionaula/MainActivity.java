@@ -26,5 +26,9 @@ public class MainActivity extends Activity {
 	public void salir(View v) {
 		this.finish();
 	}
+	public void salirireneblanca12(View v) {
+		this.finish();
+	}
+	
 	
 }
