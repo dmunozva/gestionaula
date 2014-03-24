@@ -20,6 +20,9 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	public void salirIM(View v ){
+		this.finish();
+	}
 	public void salir(View v) {
 		this.finish();
 	}
