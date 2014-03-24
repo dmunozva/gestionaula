@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void salirIM(View v ){
-		//cosaaaaaaaaaaaaaaaaaaaaaa
+		//cosaaaaaaaaaaaaaaaaaaaaaas
 		this.finish();
 	}
 	public void salir(View v) {
