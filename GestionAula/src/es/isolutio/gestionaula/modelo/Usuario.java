@@ -28,7 +28,7 @@ import es.isolutio.puntopadel.extras.Sincronizador;
 import es.isolutio.puntopadel.modelo.Partido;
 
 @Table(name = "usuario")
-public class Usuario  extends ObjetoGeneral {
+public class Usuario  extends Entity implements Serializable {
 
 	@TableField(name = "nombre", datatype = DATATYPE_TEXT, required = true)
 	@Databinding(ViewId = R.id.edTNombreUsu)
