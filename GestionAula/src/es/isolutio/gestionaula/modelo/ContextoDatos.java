@@ -14,6 +14,7 @@ public class ContextoDatos extends ObjectContext {
 	private final static String TAG = "ContextoDatos";
 
 	public ObjectSet cursoSet;
+	public ObjectSet alumnoSet;
 	
 	public ContextoDatos(Context pContext){ 
 		super(pContext, "gestionAula.db"); 
@@ -40,6 +41,8 @@ public class ContextoDatos extends ObjectContext {
 		try{
 			if (cursoSet==null)
 				cursoSet = new ObjectSet(Curso.class, this);
+			if (alumnoSet==null)
+				alumnoSet = new ObjectSet(Alumno.class, this);
 		}catch(Exception e){
 			Log.e(TAG, e.getMessage());
 		}		
