@@ -388,8 +388,14 @@ public class Usuario  extends Entity implements Serializable {
 	}
     
     public void actualizaRegistro() throws AdaFrameworkException {
-    	this.setStatus(Entity.STATUS_UPDATED);
+    	if (this.id == null) 
+    		this.setStatus(Entity.STATUS_NEW);
+    	else 
+    		this.setStatus(Entity.STATUS_UPDATED);
+    	
     	ContextoAplicacion.Contexto.usuarioSet.save(this);
+    	
+    	
     }
 	
 }
