@@ -7,32 +7,34 @@ import com.mobandme.ada.annotations.Databinding;
 import com.mobandme.ada.annotations.Table;
 import com.mobandme.ada.annotations.TableField;
 
+import es.isolutio.gestionaula.R;
+
 @Table(name ="alumnos")
 public class Alumno extends Entity implements Serializable {
 
 	/*Nobre del usuario*/
 	@TableField(name = "nombre", datatype = Entity.DATATYPE_STRING, required = true)
-	@Databinding(ViewId = R.id.edtNombreAlumno)
+	//@Databinding(ViewId = R.id.edtNombreAlumno)
 	private String nombre;
 	
 	/*Apellido del alumno*/
 	@TableField(name = "apellidos", datatype = Entity.DATATYPE_STRING, required = true)
-	@Databinding(ViewId = R.id.edtApellidoAlumno)
+	//@Databinding(ViewId = R.id.edtApellidoAlumno)
 	private String apellido;
 	
 	/*dni del alumno*/
 	@TableField(name = "dni", datatype = Entity.DATATYPE_STRING, required = true)
-	@Databinding(ViewId = R.id.edtDniAlumno)
+	//@Databinding(ViewId = R.id.edtDniAlumno)
 	private String dni;
 	
 	/*Foto del alumno*/
 	@TableField(name = "fotografia", datatype = Entity.DATATYPE_STRING)
-	@Databinding(ViewId = R.id.edtFotoAlumno)
+	//@Databinding(ViewId = R.id.edtFotoAlumno)
 	private String foto;
 	
 	/*Conocimientos previos*/
 	@TableField(name = "conocimientosPrevios", datatype = Entity.DATATYPE_STRING)
-	@Databinding(ViewId = R.id.edtconocPreviosAlumno)
+	//@Databinding(ViewId = R.id.edtconocPreviosAlumno)
 	private String conoc_previos;
 	
 	public Alumno(){

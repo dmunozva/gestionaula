@@ -60,15 +60,13 @@ import es.isolutio.gestionaula.R;
 		this.horaFin = hora_fin;
 		this.observaciones = observaciones;
 	}
-	
-	
-	
-	
+		
 	
 	
 	public void salvar() throws AdaFrameworkException {
 		if (this.getID() == null) {
 			this.setStatus(Entity.STATUS_NEW);
+			
 		} else {
 			this.setStatus(Entity.STATUS_UPDATED);
 		}
@@ -84,4 +82,26 @@ import es.isolutio.gestionaula.R;
     }
 	
 	
+	
+//	//Insertamos la entidad curso.
+//	Curso curso = new Curso();
+//	curso.setNombre("GESTIÓN DE RECURSOS");
+//	curso.setNumeroMaximoAlumnos(50);
+//	curso.setPrecioHora(2.25);			
+//	curso.setStatus(Entity.STATUS_NEW);			
+//													
+//	contextoDatos.cursoDao.add(curso);
+//	contextoDatos.cursoDao.save();
+//		
+//	//Eliminamos el curso que hemos añadido. 
+//	curso1 = contextoDatos.cursoDao.get(0);
+//	curso1.setStatus(Entity.STATUS_DELETED);
+//	contextoDatos.cursoDao.save();
+//		
+//	//Actualizamos una entidad.
+//	curso = contextoDatos.cursoDao.get(0);
+//	curso.setNumeroMaximoAlumnos(35);
+//	curso.setStatus(Entity.STATUS_UPDATED);
+//	contextoDatos.cursoDao.save();
+
 }
