@@ -4,5 +4,7 @@
     <string name="app_name">GestionAula</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>

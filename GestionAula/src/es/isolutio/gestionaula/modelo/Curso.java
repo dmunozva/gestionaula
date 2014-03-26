@@ -3,6 +3,7 @@ package es.isolutio.gestionaula.modelo;
 import java.io.Serializable;
 
 import com.mobandme.ada.Entity;
+import com.mobandme.ada.ObjectSet;
 import com.mobandme.ada.annotations.Databinding;
 import com.mobandme.ada.annotations.RequiredFieldValidation;
 import com.mobandme.ada.annotations.Table;
@@ -15,7 +16,7 @@ import es.isolutio.gestionaula.R;
 	public class Curso  extends Entity implements Serializable {
 	
 	@TableField(name = "nombre", datatype = DATATYPE_STRING, required = true)
-//	@Databinding(ViewId = R.id.edtCursoNombre)
+	@Databinding(ViewId = R.id.edtCursoNombre)
 //	@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
 	public String nombre;
 	@TableField(name = "academia", datatype = DATATYPE_STRING, required = true)
@@ -78,10 +79,13 @@ import es.isolutio.gestionaula.R;
     	//ContextoAplicacion.Contexto.cursoSet.
     }
 	
+	
 	public void eliminar() throws AdaFrameworkException {
     	this.setStatus(Entity.STATUS_DELETED);
     	ContextoAplicacion.Contexto.cursoSet.save(this);
     }
 	
-	
+	public String toString() {
+		return "CURSO: ("+this.getID()+") "+this.nombre+" "+this.academia;
+	}
 }
