@@ -8,7 +8,7 @@ import com.mobandme.ada.annotations.Table;
 import com.mobandme.ada.annotations.TableField;
 import com.mobandme.ada.exceptions.AdaFrameworkException;
 
-@Table(name ="alumnos")
+@Table(name ="alumno")
 public class Alumno extends Entity implements Serializable {
 
 	/*Nobre del usuario*/
@@ -59,16 +59,10 @@ public class Alumno extends Entity implements Serializable {
 		}
     	
     	ContextoAplicacion.Contexto.alumnoSet.save(this);
-    	
-    	//ContextoAplicacion.Contexto.cursoSet.
     }
 	
 	public void eliminar() throws AdaFrameworkException {
     	this.setStatus(Entity.STATUS_DELETED);
     	ContextoAplicacion.Contexto.alumnoSet.save(this);
     }
-	
-	
-	
-	
 }

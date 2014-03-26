@@ -61,15 +61,13 @@ import es.isolutio.gestionaula.R;
 		this.horaFin = hora_fin;
 		this.observaciones = observaciones;
 	}
-	
-	
-	
-	
+		
 	
 	
 	public void salvar() throws AdaFrameworkException {
 		if (this.getID() == null) {
 			this.setStatus(Entity.STATUS_NEW);
+			
 		} else {
 			this.setStatus(Entity.STATUS_UPDATED);
 		}
@@ -85,7 +83,9 @@ import es.isolutio.gestionaula.R;
     	ContextoAplicacion.Contexto.cursoSet.save(this);
     }
 	
+
 	public String toString() {
 		return "CURSO: ("+this.getID()+") "+this.nombre+" "+this.academia;
 	}
+
 }
