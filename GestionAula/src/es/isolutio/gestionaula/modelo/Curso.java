@@ -17,30 +17,25 @@ import es.isolutio.gestionaula.R;
 	
 	@TableField(name = "nombre", datatype = DATATYPE_STRING, required = true)
 	@Databinding(ViewId = R.id.edtCursoNombre)
-//	@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
+	//@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
 	public String nombre;
 	@TableField(name = "academia", datatype = DATATYPE_STRING, required = true)
-//	@Databinding(ViewId = R.id.edtAcademiaCurso)
-//	@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
+	@Databinding(ViewId = R.id.edtCursoAcademia)
 	public String academia;
 	@TableField(name = "fechaInicio", datatype = DATATYPE_STRING, required = true)
-//	@Databinding(ViewId = R.id.edtFechaInicioCurso)
-//	@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
+	//@Databinding(ViewId = R.id.edtCursoFechaInicio)
 	public String fechaInicio;
 	@TableField(name = "fechaFin", datatype = DATATYPE_TEXT, required = true)
-//	@Databinding(ViewId = R.id.edtFechaFinCurso)
-//	@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
+	//@Databinding(ViewId = R.id.edtCursoFechaFin)
 	public String fechaFin;
 	@TableField(name = "horaInicio", datatype = DATATYPE_TEXT, required = true)
-//	@Databinding(ViewId = R.id.edtHoraFinCurso)
-//	@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
+	//@Databinding(ViewId = R.id.edtCursoHoraFin)
 	public String horaInicio;
 	@TableField(name = "horaFin", datatype = DATATYPE_TEXT, required = true)
-//	@Databinding(ViewId = R.id.edtHoraFinCurso)
-//	@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
+	//@Databinding(ViewId = R.id.edtCursoHoraFin)
 	public String horaFin;
 	@TableField(name = "observaciones", datatype = DATATYPE_TEXT)
-//	@Databinding(ViewId = R.id.edtObservaciones)
+	//@Databinding(ViewId = R.id.edtCursoObservaciones)
 	public String observaciones;
 	
 	

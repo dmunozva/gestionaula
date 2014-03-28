@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="accion"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -10,29 +9,29 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/txtEligeCurso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-    <EditText
-        android:id="@+id/edtCursoNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="20dp"
-        android:ems="10" />
+        android:text="CRUD" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/crudAlumnos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/edtCursoNombre"
+        android:layout_below="@+id/txtEligeCurso"
         android:layout_marginTop="32dp"
-        android:onClick="accion"
-        android:text="Button" />
+        android:onClick="irAAlumnos"
+        android:text="Alumnos" />
+
+    <Button
+        android:id="@+id/crudCursos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crudAlumnos"
+        android:layout_below="@+id/crudAlumnos"
+        android:layout_marginTop="18dp"
+        android:onClick="irACurso"
+        android:text="Cursos" />
 
 </RelativeLayout>
