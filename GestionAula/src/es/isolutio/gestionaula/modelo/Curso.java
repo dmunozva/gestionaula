@@ -5,6 +5,7 @@ import java.io.Serializable;
 import com.mobandme.ada.Entity;
 import com.mobandme.ada.ObjectSet;
 import com.mobandme.ada.annotations.Databinding;
+import com.mobandme.ada.annotations.RegularExpressionValidation;
 import com.mobandme.ada.annotations.RequiredFieldValidation;
 import com.mobandme.ada.annotations.Table;
 import com.mobandme.ada.annotations.TableField;
@@ -17,7 +18,7 @@ import es.isolutio.gestionaula.R;
 	
 	@TableField(name = "nombre", datatype = DATATYPE_STRING, required = true)
 	@Databinding(ViewId = R.id.edtCursoNombre)
-	//@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
+	@RequiredFieldValidation(messageResourceId=R.string.error_campo_requerido)
 	public String nombre;
 	@TableField(name = "academia", datatype = DATATYPE_STRING, required = true)
 	@Databinding(ViewId = R.id.edtCursoAcademia)
@@ -59,6 +60,26 @@ import es.isolutio.gestionaula.R;
 		
 	
 	
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+	public String getAcademia() {
+		return academia;
+	}
+
+
+	public void setAcademia(String academia) {
+		this.academia = academia;
+	}
+
+
 	public void salvar() throws AdaFrameworkException {
 		if (this.getID() == null) {
 			this.setStatus(Entity.STATUS_NEW);
