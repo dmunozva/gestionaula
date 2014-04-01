@@ -1,67 +1,21 @@
 package es.isolutio.gestionaula;
 
-import com.mobandme.ada.DataBinder;
-import com.mobandme.ada.exceptions.AdaFrameworkException;
-
-import es.isolutio.gestionaula.modelo.Curso;
 import es.isolutio.gestionaula.modelo.ContextoAplicacion;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 
 
 public class MainActivity extends Activity {
 
-	Curso c;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        try {
-        	ContextoAplicacion.inicializar(this);
-        	
-        	c = new Curso("c5454","a2","f2","f2","h2","h2","obs2");
-        	c.salvar();
-//        	c.bind(this);
-//			Log.i("DMV",c.toString());
-//			
-//					
-//			ContextoAplicacion.Contexto.cursoSet.fill();
-//			for(int i=0; i<ContextoAplicacion.Contexto.cursoSet.size(); i++) {
-//				Curso c2 = (Curso)ContextoAplicacion.Contexto.cursoSet.get(i);
-//				Log.i("DMV2",c2.toString());
-//			}
-			/*
-			Curso cmodif = (Curso)ContextoAplicacion.Contexto.cursoSet.getElementByID((long)2);
-			cmodif.nombre = "nuevoNombre2";
-			cmodif.salvar();
-			
-
-			
-			ContextoAplicacion.Contexto.cursoSet.fill();
-			for(int i=0; i<ContextoAplicacion.Contexto.cursoSet.size(); i++) {
-				Curso c2 = (Curso)ContextoAplicacion.Contexto.cursoSet.get(i);
-				Log.i("DMV3",c2.toString());
-			}
-			
-			cmodif.eliminar();
-
-			
-			ContextoAplicacion.Contexto.cursoSet.fill();
-			for(int i=0; i<ContextoAplicacion.Contexto.cursoSet.size(); i++) {
-				Curso c2 = (Curso)ContextoAplicacion.Contexto.cursoSet.get(i);
-				Log.i("DMV4",c2.toString());
-			}
-			*/
-			
-		} catch (AdaFrameworkException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        ContextoAplicacion.inicializar(this);
     }
 
     
@@ -74,21 +28,6 @@ public class MainActivity extends Activity {
 		Intent intent= new Intent(MainActivity.this, CursoActivity.class);
 		startActivity(intent);
 	}
-	
-    
-		
-		
-		
-		public void accion(View v) {
-		try {
-			c.bind(this, DataBinder.BINDING_UI_TO_ENTITY);
-			c.salvar();
-		} catch (AdaFrameworkException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Log.i("DMV",c.toString());
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
