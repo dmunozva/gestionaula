@@ -26,6 +26,10 @@
             android:name="es.isolutio.gestionaula.CursoActivity"
             android:label="@string/title_activity_curso" >
         </activity>
+        <activity
+            android:name="es.isolutio.gestionaula.AlumnoActivity"
+            android:label="@string/title_activity_alumno" >
+        </activity>
     </application>
 
 </manifest>

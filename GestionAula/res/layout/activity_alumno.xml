@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AlumnoActivity" >
+
+    <TextView
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alumnos" />
+
+    <Spinner
+        android:id="@+id/spinnerAlumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Alumno" />
+
+    <EditText
+        android:id="@+id/edtAlumnoNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellidos de Alumno" />
+
+    <EditText
+        android:id="@+id/edtAlumnoApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+  
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnAlumnoGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:onClick="accion"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnAlumnoCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="LimpiarCurso"
+            android:text="Limpiar" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="EliminarCurso"
+            android:text="Eliminar" />
+
+    </LinearLayout>
+
+</LinearLayout>

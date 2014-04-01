@@ -8,5 +8,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_curso">CursoActivity</string>
     <string name="error_campo_requerido">El campo es obligatorio</string>
+    <string name="title_activity_alumno">AlumnoActivity</string>
 
 </resources>

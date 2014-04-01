@@ -19,9 +19,10 @@ public class MainActivity extends Activity {
     }
 
     
-	/*public void irAAlumno(View v){
+	public void irAAlumnos(View v){
 		Intent intent = new Intent(MainActivity.this, AlumnoActivity.class);
-	}*/
+		startActivity(intent);
+	}
 		
     
 	public void irACurso(View v){
