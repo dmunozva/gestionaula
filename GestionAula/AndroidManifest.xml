@@ -27,6 +27,14 @@
             android:label="@string/title_activity_curso" >
         </activity>
         <activity
+            android:name="es.isolutio.gestionaula.CursoListActivity"
+            android:label="@string/title_activity_curso" >
+        </activity>
+        <activity
+            android:name="es.isolutio.gestionaula.CursoDetailActivity"
+            android:label="@string/title_activity_curso" >
+        </activity>
+        <activity
             android:name="es.isolutio.gestionaula.AlumnoActivity"
             android:label="@string/title_activity_alumno" >
         </activity>

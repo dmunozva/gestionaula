@@ -9,5 +9,9 @@
     <string name="title_activity_curso">CursoActivity</string>
     <string name="error_campo_requerido">El campo es obligatorio</string>
     <string name="title_activity_alumno">AlumnoActivity</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_curso_list">Cursos</string>
+    <string name="title_curso_detail">Curso Detail</string>
 
 </resources>

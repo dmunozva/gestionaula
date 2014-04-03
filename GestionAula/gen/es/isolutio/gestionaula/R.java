@@ -25,14 +25,17 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout1=0x7f080000;
-        public static final int action_settings=0x7f080011;
+        public static final int action_settings=0x7f080014;
         public static final int btnAlumnoCancelar=0x7f080005;
         public static final int btnAlumnoGuardar=0x7f080004;
         public static final int btnCursoCancelar=0x7f08000e;
         public static final int btnCursoGuardar=0x7f08000d;
         public static final int button1=0x7f080006;
-        public static final int crudAlumnos=0x7f08000f;
-        public static final int crudCursos=0x7f080010;
+        public static final int crudAlumnos=0x7f080011;
+        public static final int crudCursos=0x7f080012;
+        public static final int curso_detail=0x7f080013;
+        public static final int curso_detail_container=0x7f08000f;
+        public static final int curso_list=0x7f080010;
         public static final int edtAlumnoApellidos=0x7f080003;
         public static final int edtAlumnoNombre=0x7f080002;
         public static final int edtCursoAcademia=0x7f08000c;
@@ -46,7 +49,11 @@ public final class R {
     public static final class layout {
         public static final int activity_alumno=0x7f030000;
         public static final int activity_curso=0x7f030001;
-        public static final int activity_main=0x7f030002;
+        public static final int activity_curso_detail=0x7f030002;
+        public static final int activity_curso_list=0x7f030003;
+        public static final int activity_curso_twopane=0x7f030004;
+        public static final int activity_main=0x7f030005;
+        public static final int fragment_curso_detail=0x7f030006;
     }
     public static final class menu {
         public static final int alumno=0x7f070000;
@@ -62,6 +69,10 @@ public final class R {
         public static final int title_activity_curso=0x7f050005;
         public static final int title_activity_main=0x7f050004;
         public static final int title_activity_principal=0x7f050003;
+        public static final int title_curso_detail=0x7f05000b;
+        public static final int title_curso_list=0x7f05000a;
+        public static final int title_item_detail=0x7f050009;
+        public static final int title_item_list=0x7f050008;
     }
     public static final class style {
         /** 

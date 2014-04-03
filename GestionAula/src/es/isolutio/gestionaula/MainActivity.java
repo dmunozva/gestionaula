@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 		
     
 	public void irACurso(View v){
-		Intent intent= new Intent(MainActivity.this, CursoActivity.class);
+		Intent intent= new Intent(MainActivity.this, CursoListActivity.class);
 		startActivity(intent);
 	}
 
